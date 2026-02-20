@@ -2,7 +2,7 @@
 <html>
 
 <head>
-
+  <meta charset="UTF-8">
   <title>Dental Clinic</title>
 
   <style>
@@ -12,40 +12,43 @@
       background: #0b0b0b;
       color: white;
       margin: 0;
+      text-align: center;
     }
 
     header {
       background: #111;
       padding: 20px;
-      text-align: center;
       font-size: 24px;
       font-weight: bold;
     }
 
-    .container {
-      padding: 20px;
+    nav {
+      background: #1a1a1a;
+      padding: 10px;
     }
 
-    .service {
-      background: #1a1a1a;
-      margin: 10px 0;
-      padding: 15px;
-      border-radius: 8px;
+    nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      color: #00c853;
+    }
+
+    .container {
+      padding: 40px;
     }
 
     button {
-      width: 100%;
-      padding: 15px;
+      padding: 15px 30px;
       background: #00c853;
       color: white;
       border: none;
       border-radius: 8px;
       font-size: 18px;
-      margin-top: 20px;
-    }
-
-    button:hover {
-      background: #00a844;
     }
 
   </style>
@@ -58,27 +61,24 @@
 Dental Clinic
 </header>
 
+<nav>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+
 <div class="container">
 
-  <div class="service">Teeth Cleaning</div>
+<h1>Professional Dental Care</h1>
 
-  <div class="service">Teeth Whitening</div>
+<p>High quality dental services</p>
 
-  <div class="service">Dental Implants</div>
-
-  <div class="service">Orthodontics</div>
-
-  <button onclick="contact()">Book via WhatsApp</button>
+<a href="https://wa.me/249912345678">
+<button>Book via WhatsApp</button>
+</a>
 
 </div>
-
-<script>
-
-function contact() {
-  alert("WhatsApp: +249116268315");
-}
-
-</script>
 
 </body>
 
